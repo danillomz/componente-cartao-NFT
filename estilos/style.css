@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --primary-Soft-blue: #8bacda;
+    --primary-cyan: #00fff7;
+
+    --neutra-very-dark-blue-main-BG: #0d192b;
+    --neutra-very-dark-blue-card-BG: #14253d;
+    --neutra-very-dark-blue-line: #2f415b;
+    --neutra-white: #ffffff;
+}
+
+main {
+    position: relative;
+    background-color: var(--neutra-very-dark-blue-main-BG);
+    height: 100vh;
+}
+
+main .container {
+    position: absolute;
+    width: 375px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 12px 25px hsl(216, 51%, 10%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: var(--neutra-very-dark-blue-card-BG);
+}
+
+main .container .img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .container .description {
+    margin-top: 20px;
+}
+
+main .container .description h1 {
+    color: var(--neutra-white);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+main .container .description p {
+    color: var(--primary-Soft-blue);
+    font-weight: 300;
+}
+
+main .container .ether {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+main .container .ether .eth {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+main .container .ether .eth p {
+     color: var(--primary-cyan);
+     font-weight: 600;
+}
+
+main .container .ether .date {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+main .container .ether .date p {
+    color: var(--primary-Soft-blue);
+    
+}
+
+
+
+main .creation {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid var(--neutra-very-dark-blue-line);
+}
+
+main .creation .avatar {
+    margin-top: 20px;
+    background-color: var(--neutra-white);
+    width: 40px;
+    border-radius: 70px;
+    border: 1px solid white;
+}
+
+main .creation .avatar img {
+    display: flex;
+    width: 100%;
+}
+
+main .creation p {
+    font-size: 16px;
+    color: var(--primary-Soft-blue);
+}
+
+main .creation span {
+    color: var(--neutra-white);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
