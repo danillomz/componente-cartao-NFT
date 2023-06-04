@@ -34,9 +34,30 @@ main .container {
     background-color: var(--neutra-very-dark-blue-card-BG);
 }
 
+main .container .img {
+    position: relative;
+}
+
 main .container .img img {
     width: 100%;
     border-radius: 10px;
+}
+
+main .container .img::before {
+    content: "";
+    width: 0;
+    height: 99%;
+    position: absolute;
+    background: #00fff748;
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+main .container .img:hover::before {
+    width: 100%;
+    cursor: pointer;
 }
 
 main .container .description {
@@ -47,6 +68,11 @@ main .container .description h1 {
     color: var(--neutra-white);
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+main .container .description h1:hover {
+    cursor: pointer;
+    color: var(--primary-cyan);
 }
 
 main .container .description p {
@@ -114,4 +140,9 @@ main .creation span {
     color: var(--neutra-white);
     margin-bottom: 20px;
     font-weight: 400;
+}
+
+main .creation span:hover {
+    color: var(--primary-cyan);
+    cursor: pointer;
 }
